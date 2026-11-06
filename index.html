@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tailwind 5</title>
+    <meta name="description" content="Welcome to Cuan Swan Ltd. Explore our gallery and learn more about us.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-gray-50 text-gray-800 flex flex-col">
+
+    <!-- Header -->
+    <header class="px-4 pt-6 sm:px-8 lg:px-12">
+        <nav
+            aria-label="Main navigation"
+            class="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-2
+                   rounded-xl bg-emerald-500 p-3 shadow-md"
+        >
+            <a href="index.html"
+               class="rounded-lg bg-emerald-100 px-4 py-2 font-medium
+                      text-emerald-950 transition hover:bg-white">
+                Home
+            </a>
+
+            <a href="gallery.html"
+               class="rounded-lg bg-emerald-100 px-4 py-2 font-medium
+                      text-emerald-950 transition hover:bg-white">
+                Gallery
+            </a>
+
+            <a href="#about"
+               class="rounded-lg bg-emerald-100 px-4 py-2 font-medium
+                      text-emerald-950 transition hover:bg-white">
+                About
+            </a>
+
+            <a href="#contact"
+               class="rounded-lg bg-emerald-100 px-4 py-2 font-medium
+                      text-emerald-950 transition hover:bg-white">
+                Contact
+            </a>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main class="mx-auto w-full max-w-7xl flex-grow px-4 py-10 sm:px-8 lg:px-12">
+
+        <!-- About section -->
+        <section id="about" class="mb-12">
+            <h1 class="mb-8 text-center text-3xl font-bold text-emerald-900 sm:text-4xl">
+                Welcome to Cuan Swan Ltd.
+            </h1>
+
+            <div class="grid grid-cols-1 items-center gap-6 md:grid-cols-3">
+
+                <!-- First image -->
+                <div class="overflow-hidden rounded-xl border-4 border-emerald-800
+                            bg-white p-2 shadow-md">
+                    <img
+                        src="images/image1.jpg"
+                        alt="First featured photograph"
+                        class="h-64 w-full rounded-lg object-cover"
+                    >
+                </div>
+
+                <!-- Text content -->
+                <div class="flex h-full items-center rounded-xl border border-emerald-200
+                            bg-white p-6 shadow-sm">
+                    <div>
+                        <h2 class="mb-4 text-center text-2xl font-semibold text-emerald-800">
+                            About Us
+                        </h2>
+
+                        <p class="text-center leading-7 text-gray-600">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Quae vel ut, molestiae sapiente assumenda officia
+                            repudiandae omnis inventore veniam amet rem itaque quo
+                            architecto adipisci unde sed dolore! Ipsam itaque totam
+                            aspernatur incidunt magnam accusamus dolorem tempore
+                            quae, autem doloribus!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Second image -->
+                <div class="overflow-hidden rounded-xl border-4 border-emerald-800
+                            bg-white p-2 shadow-md">
+                    <img
+                        src="images/image3.jpg"
+                        alt="Second featured photograph"
+                        class="h-64 w-full rounded-lg object-cover"
+                    >
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="mt-auto bg-emerald-800 px-4 py-10 text-white sm:px-8">
+
+        <div class="mx-auto max-w-7xl text-center">
+
+            <h2 class="mb-5 text-2xl font-bold">
+                Cuan Swan Ltd.
+            </h2>
+
+            <!-- Footer navigation -->
+            <nav aria-label="Footer navigation"
+                 class="mb-6 flex flex-wrap justify-center gap-3">
+
+                <a href="index.html"
+                   class="rounded-lg border border-emerald-200 px-4 py-2
+                          transition hover:bg-emerald-700">
+                    Home
+                </a>
+
+                <a href="gallery.html"
+                   class="rounded-lg border border-emerald-200 px-4 py-2
+                          transition hover:bg-emerald-700">
+                    Gallery
+                </a>
+
+                <a href="#about"
+                   class="rounded-lg border border-emerald-200 px-4 py-2
+                          transition hover:bg-emerald-700">
+                    About Us
+                </a>
+
+                <a href="#contact"
+                   class="rounded-lg border border-emerald-200 px-4 py-2
+                          transition hover:bg-emerald-700">
+                    Contact
+                </a>
+
+            </nav>
+
+            <!-- Address -->
+            <address class="mb-6 not-italic leading-7 text-emerald-100">
+                44 Address Road<br>
+                LivingPlace<br>
+                4444
+            </address>
+
+            <!-- Copyright -->
+            <div class="border-t border-emerald-600 pt-5 text-sm text-emerald-100">
+                &copy; <span id="year">2026</span> Cuan Swan Ltd. All rights reserved.
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
